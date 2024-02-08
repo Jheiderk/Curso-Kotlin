@@ -13,15 +13,19 @@ import com.google.android.material.slider.RangeSlider
 
 class MainActivity : AppCompatActivity() {
     private var weight= 50
+    private lateinit var heightTv:TextView
+    private lateinit var rest:FloatingActionButton
+    private lateinit var plus:FloatingActionButton
+    private lateinit var slider:RangeSlider
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         println(getString(R.string.btn_login))
-        val heightTv:TextView=findViewById(R.id.texto2)
-        val rest:FloatingActionButton=findViewById(R.id.rest)
-        val plus:FloatingActionButton=findViewById(R.id.plus)
-        var slider:RangeSlider=findViewById(R.id.slider)
+        heightTv=findViewById(R.id.texto2)
+        rest=findViewById(R.id.rest)
+        plus=findViewById(R.id.plus)
+        slider=findViewById(R.id.slider)
 
         slider.addOnChangeListener { _, value, _ ->
             heightTv.text =" ${value.toString()} cm"
