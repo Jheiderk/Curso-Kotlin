@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Curso Kotlin</string>
+    <string name="btn_login">Iniciar Sesion</string>
+    <string name="usuario">Altura</string>
+    <string name="weighTv">Peso 50 Kg</string>
+    <string name="writeName">Escribe tu nombre:</string>
+    <string name="_heightBase">100.0 cm</string>
+
+
 </resources>
