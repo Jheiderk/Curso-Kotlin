@@ -4,55 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gris"
+    android:background="@color/blueWhite"
     android:padding="30sp"
-
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15sp"
-        android:layout_marginTop="20sp"
-        android:text="@string/usuario"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/blueSelect"
+        android:layout_height="200sp"
+        app:cardCornerRadius="25sp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
 
-    <TextView
-        android:id="@+id/texto2"
+            android:text="@string/usuario"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:paddingStart="15sp"/>
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:gravity="center"
+            android:text="@string/height_text"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_gravity="center" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:valueFrom="100"
+            android:valueTo="240"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25sp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:layout_constraintTop_toBottomOf="@id/cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30sp"
+        app:cardCornerRadius="25sp"
+        android:backgroundTint="@color/blueSelect"
+
+        >
+
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="@string/weigh_text"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/restFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70sp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/mas"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/plusFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menos"
+            android:layout_marginEnd="70sp"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100sp"
-        android:textColor="@color/black"
-        android:text="@string/_heightBase"
-        android:textSize="30sp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/texto"/>
-    <com.google.android.material.slider.RangeSlider
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/texto2"
-        android:stepSize="1"
-        android:valueFrom="100"
-        android:valueTo="250"/>
-    <TextView
-        android:id="@+id/texto3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15sp"
-        android:layout_marginTop="20sp"
-        android:gravity="center"
-        android:text="@string/weighTv"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/slider"/>
+        android:layout_marginTop="70sp"
+        app:cardCornerRadius="25sp"
+        android:backgroundTint="@color/blueSelect">
 
+        <TextView
+            android:id="@+id/descriptionResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/description"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/resultTextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/Result"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
@@ -60,29 +140,10 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/aqua"
         android:text="@string/btn_login"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/rest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/texto3"
-        android:src="@drawable/plus"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="25sp"
-        android:layout_marginStart="150sp"/>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/texto3"
-        android:src="@drawable/rest"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginEnd="150sp"
-        android:layout_marginTop="25sp"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

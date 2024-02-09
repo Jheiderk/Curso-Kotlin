@@ -10,6 +10,13 @@
     <color name="aqua">#19BAAD</color>
     <color name="yellow">#B5BA19</color>
     <color name="blue">#191CBA</color>
-    <color name="gris">#2D5A7C</color>
+    <color name="blueWhite">#2D5A7C</color>
+    <color name="blueSelect">#115283</color>
     <color name="green">#5DA377</color>
+
+
+    <color name="low">#4F85E3</color>
+    <color name="mid">#47CA28</color>
+    <color name="over">#C86B2D</color>
+    <color name="obesity">#EC0000</color>
 </resources>
