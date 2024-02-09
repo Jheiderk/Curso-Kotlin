@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blueWhite"
+    android:background="@color/blueBlack"
     android:padding="30sp"
     tools:context=".activity.MainActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
         android:layout_width="match_parent"
-        android:backgroundTint="@color/blueSelect"
         android:layout_height="200sp"
-        app:cardCornerRadius="25sp"
-        tools:ignore="MissingConstraints">
+        android:backgroundTint="@color/blueSelect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="25sp">
         <TextView
             android:id="@+id/texto"
             android:layout_width="wrap_content"
@@ -59,17 +61,28 @@
         app:layout_constraintTop_toBottomOf="@id/cardview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="50sp"
         app:cardCornerRadius="25sp"
         android:backgroundTint="@color/blueSelect"
 
         >
 
         <TextView
-            android:id="@+id/texto3"
+            android:id="@+id/peso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="@string/Weight"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
             android:gravity="center"
             android:text="@string/weigh_text"
             android:textColor="@color/black"
@@ -78,20 +91,22 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/restFab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="70sp"
+            android:layout_width="65dp"
+            android:layout_height="65sp"
+            android:layout_marginStart="120sp"
             android:layout_marginTop="20sp"
+            app:fabCustomSize="65sp"
             android:src="@drawable/mas"
             android:layout_gravity="center"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/plusFab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:src="@drawable/menos"
-            android:layout_marginEnd="70sp"
+            android:layout_marginEnd="120sp"
             android:layout_marginTop="20sp"
+            app:fabCustomSize="65dp"
             android:layout_gravity="center"
             />
 
@@ -100,11 +115,11 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="100sp"
+        android:layout_height="130sp"
         app:layout_constraintTop_toBottomOf="@id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="70sp"
+        android:layout_marginTop="50sp"
         app:cardCornerRadius="25sp"
         android:backgroundTint="@color/blueSelect">
 

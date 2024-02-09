@@ -10,13 +10,13 @@
     <color name="aqua">#19BAAD</color>
     <color name="yellow">#B5BA19</color>
     <color name="blue">#191CBA</color>
-    <color name="blueWhite">#2D5A7C</color>
-    <color name="blueSelect">#115283</color>
+    <color name="blueBlack">#003E6C</color>
+    <color name="blueSelect">#00589A</color>
     <color name="green">#5DA377</color>
 
 
-    <color name="low">#4F85E3</color>
-    <color name="mid">#47CA28</color>
-    <color name="over">#C86B2D</color>
-    <color name="obesity">#EC0000</color>
+    <color name="low">#4675C6</color>
+    <color name="mid">#2E8B18</color>
+    <color name="over">#B36D17</color>
+    <color name="obesity">#8C2222</color>
 </resources>

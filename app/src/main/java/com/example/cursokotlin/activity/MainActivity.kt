@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
     fun weightKg() {
         var WeightText: TextView = findViewById(R.id.texto3)
-        WeightText.text = "Peso $weight Kg"
+        WeightText.text = "$weight Kg"
     }
 
     private fun calculateBMI() {

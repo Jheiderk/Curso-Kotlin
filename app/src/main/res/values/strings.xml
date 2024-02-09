@@ -2,7 +2,7 @@
     <string name="app_name">Curso Kotlin</string>
     <string name="btn_login">Calcular</string>
     <string name="usuario">Altura</string>
-    <string name="weigh_text">Peso XXX Kg</string>
+    <string name="weigh_text">XXX Kg</string>
     <string name="height_text">XXX cm</string>
     <string name="Result">Resultado: 123</string>
     <string name="description">Description</string>
@@ -10,6 +10,7 @@
     <string name="normal_weight">Normal</string>
     <string name="over_weight">Alto IMC</string>
     <string name="obesity">Obeso</string>
+    <string name="Weight">Peso</string>
 
 
 </resources>
