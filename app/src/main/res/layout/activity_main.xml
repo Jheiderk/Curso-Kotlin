@@ -22,13 +22,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-
+            android:layout_marginStart="15sp"
             android:text="@string/usuario"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textAllCaps="true"
-            android:textStyle="bold"
-            android:paddingStart="15sp"/>
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/texto2"
@@ -90,7 +89,7 @@
             android:textStyle="bold" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/restFab"
+            android:id="@+id/plusFab"
             android:layout_width="65dp"
             android:layout_height="65sp"
             android:layout_marginStart="120sp"
@@ -100,7 +99,7 @@
             android:layout_gravity="center"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/plusFab"
+            android:id="@+id/restFab"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:src="@drawable/menos"
